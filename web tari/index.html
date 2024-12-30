@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="id">
+<head> 
+
+    <script type="application/ld+json">
+        {
+          "@context": "https://schema.org/",
+          "@type": "AggregateRating",
+          "itemReviewed": {
+            "@type": "Organization",
+            "name": "Tar junilia-Fakultas Sains dan teknologi prodi ilmu komputer",
+            "description":"Mahasiswa jurusan Ilmu Komputer adalah individu yang berfokus pada pemahaman, pengembangan, dan penerapan teknologi informasi dalam berbagai bidang. Mereka mempelajari konsep-konsep dasar seperti pemrograman, algoritma, kecerdasan buatan, dan pengelolaan data, serta berusaha menciptakan solusi inovatif untuk masalah-masalah nyata. Dengan semangat untuk terus belajar dan beradaptasi dengan perkembangan teknologi, mahasiswa ilmu komputer berperan penting dalam membangun masa depan yang berbasis digital dan teknologi canggih.
+
+            ",
+            "url": "---",
+            "logo": "https://cdn.annibuku.com/uploads/logo-kampus/1970-universitas-yatsi-madani.jpg",
+            "image": "---",
+            "address": {
+              "@type": "PostalAddress",
+              "streetAddress": "Jl. Aria Santika No.40A, RT.005/RW.011, Margasari, Kec. Karawaci",
+              "addressLocality": "Tangerang",
+              "addressRegion": "Banten",
+              "postalCode": "15113",
+              "addressCountry": "ID"
+            },
+            "telephone": "+628-78-1871-7883",
+            "email": "mailto:admin@uym.ac.id"
+          },
+          "ratingValue": 4.8,
+          "bestRating": 5,
+          "ratingCount": 120
+        }
+        </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio tari Junilia</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            line-height: 1.6;
+            color: #2c3e50;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .main-content {
+            display: flex;
+            gap: 30px;
+            align-items: flex-start;
+        }
+
+        .left-column, .right-column {
+            flex: 1;
+            max-width: 50%;
+        }
+
+        .profile-card, .education-card {
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+
+        .profile-card:hover, .education-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .profile-header {
+            background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+            padding: 30px;
+            text-align: center;
+            color: white;
+        }
+
+        img {
+    max-width: 100%; /* Membuat gambar responsif */
+    height: auto;    /* Mempertahankan rasio aspek gambar */
+    width: 50%;      /* Mengatur lebar gambar menjadi 50% dari elemen induknya */
+        }
+
+        .profile-img:hover {
+            transform: scale(1.05);
+        }
+
+        .profile-body {
+            padding: 30px;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .info-grid {
+            display: grid;
+            gap: 15px;
+        }
+
+        .info-item {
+            display: flex;
+            gap: 10px;
+        }
+
+        .label {
+            color: #6c757d;
+            min-width: 120px;
+        }
+
+        .timeline {
+            position: relative;
+            padding: 30px;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            left: 50px;
+            top: 0;
+            bottom: 0;
+            width: 2px;
+            background: #3498db;
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 30px;
+            padding-left: 70px;
+        }
+
+        .timeline-dot {
+            position: absolute;
+            left: 44px;
+            width: 14px;
+            height: 14px;
+            border-radius: 50%;
+            background: #3498db;
+            border: 3px solid white;
+        }
+
+        .timeline-content {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.3s ease;
+        }
+
+        .timeline-content:hover {
+            transform: translateX(10px);
+            background: white;
+        }
+
+        .education-icon {
+            width: 40px;
+            height: 40px;
+            background: #3498db;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+        }
+
+        .education-icon i {
+            color: white;
+        }
+
+        .year {
+            color: #6c757d;
+            font-size: 0.9em;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+
+        @media (max-width: 768px) {
+            .main-content {
+                flex-direction: column;
+            }
+
+            .left-column, .right-column {
+                max-width: 100%;
+            }
+
+            .timeline::before {
+                left: 30px;
+            }
+
+            .timeline-item {
+                padding-left: 50px;
+            }
+
+            .timeline-dot {
+                left: 24px;
+            }
+
+            .footer-nav a {
+                text-decoration: none;
+                color: #2575fc;
+                margin-right: 10px;
+            }
+
+            .footer-nava:hover {
+                color: #6a11cb;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="main-content">
+            <!-- Kolom kiri -->
+            <div class="left-column">
+                <div class="profile-card">
+                    <div class="profile-header">
+                        <img class="rounded-circle fotosaya" src="images/fototari.jpeg" class="img" alt="">
+                        <h1>nafisa ma'wa farah</h1>
+                        <p class="tagline">Web Developer | Designer</p>
+                    </div>
+                    
+                    <div class="profile-body">
+                        <div class="section">
+                            <h2><i class="fas fa-user"></i> Tentang Saya</h2>
+                            <p> Saya adalah Tari Junilia Dewi, mahasiswi Universitas Yarsi Madani jurusan Ilmu Komputer yang memiliki minat besar dalam dunia teknologi informasi. Saat ini, saya mendalami berbagai bidang seperti pemrograman, pengelolaan data, dan pengembangan perangkat lunak. Selain aktif di perkuliahan, saya juga sering mengikuti seminar, workshop, dan bergabung dalam komunitas teknologi untuk memperluas wawasan serta membangun koneksi. Saya bercita-cita menjadi seorang profesional yang mampu memberikan solusi inovatif di bidang teknologi, karena saya percaya bahwa teknologi adalah jembatan untuk menciptakan dampak positif bagi masyarakat. Dengan semangat belajar dan kerja keras, saya bertekad untuk mewujudkan visi tersebut.</p>
+                        </div>
+
+                        <div class="section">
+                            <h2><i class="fas fa-info-circle"></i> Informasi Personal</h2>
+                            <div class="info-grid">
+                                <div class="info-item">
+                                    <span class="label">NIM:</span>
+                                    <span>23050668</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="label">Program Studi:</span>
+                                    <span>Ilmu Komputer</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="label">Semester:</span>
+                                    <span>3</span>
+                                </div>
+                                <div class="info-item">
+                                    <span class="label">Email:</span>
+                                    <span>tarijuniliaaa6@gmail.com</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Kolom kanan -->
+            <div class="right-column">
+                <div class="education-card">
+                    <h2><i class="fas fa-graduation-cap"></i> Riwayat Pendidikan</h2>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="education-icon">
+                                    <i class="fas fa-university"></i>
+                                </div>
+                                <h3>Universitas Yatsi Madani</h3>
+                                <p class="program">Program Studi Ilmu Komputer – Semester 3</p>
+                                <p class="year"><i class="fas fa-calendar-alt"></i> 2023 - Sekarang</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="education-icon">
+                                    <i class="fas fa-school"></i>
+                                </div>
+                                <h3>MAN 1 CILACAP</h3>
+                                <p class="program"></p>
+                                <p class="year"><i class="fas fa-calendar-alt"></i> 2019 - 2022</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="timeline-dot"></div>
+                            <div class="timeline-content">
+                                <div class="education-icon">
+                                    <i class="fas fa-school"></i>
+                                </div>
+                                <h3>SMP NEGRI 8 KOTA TANGERANG</h3>
+                                <p class="year"><i class="fas fa-calendar-alt"></i> 2016 - 2019</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+<footer>
+    <div class="footer-content">
+        <div class="footer-nav">
+            <a href="#home">Beranda</a>
+            <a href="#about">Tentang</a>
+            <a href="#projects">Proyek</a>
+            <a href="#contact">Kontak</a>
+        </div>
+        
+        <div class="social-buttons">
+            
+            </a>
+            <a href="https://www.instagram.com/tarijuniliaaaaa_/profilecard/?igsh=MTNyYTRnOGRzZDcwMQ==" class="social-btn instagram" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+            <a href="https://github.com/username" class="social-btn github" target="_blank">
+                <i class="fab fa-github"></i>
+            </a>
+            <a href="https://linkedin.com/in/username" class="social-btn linkedin" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2024 Portfolio Saya. Dibuat dengan <span class="heart">❤️</span></p>
+            <p>Hubungi saya di: <a href="mailto:tarijuniliaaa6@gmail.com" class="email-link">tarijuniliaaa6@gmail.com</a></p>    
+            </div>
+    </div>
+</footer>
